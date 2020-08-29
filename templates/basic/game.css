@@ -1,0 +1,27 @@
+body{
+    color: #fff;
+    background-color: #222; 
+    text-align: center;   
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding:0px;margin:0px;
+}
+h1 {
+  color: #ffe;
+  font-size: 1em;
+  background-color: #311; 
+  padding:10px;
+  margin:0px;
+  
+}
+a {
+  color: #aef;
+}
+
+footer{
+  padding:10px;  
+  color: #abf;
+  font-size: 0.9em;  
+}
+canvas {
+  padding:10px;  
+}
