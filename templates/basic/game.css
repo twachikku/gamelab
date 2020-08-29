@@ -1,6 +1,8 @@
-body{
-    color: #fff;
-    background-color: #222; 
+body {
+  background-color: #222; 
+  color: #fff;
+}
+.main{
     text-align: center;   
     font-family: 'Bai Jamjuree', sans-serif;
     padding:0px;margin:0px;
@@ -20,8 +22,36 @@ a {
 footer{
   padding:10px;  
   color: #abf;
-  font-size: 0.9em;  
 }
 canvas {
   padding:10px;  
+}
+
+.font1 {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+.font2 {
+  font-family: 'Monoton', cursive;
+}
+.title {
+  font-family: 'Monoton', cursive;
+  font-size: 30px;
+  color: greenyellow;
+}
+
+@media only screen and (max-width: 780px) {
+  .title {
+    font-family: 'Monoton', cursive;
+    font-size: 18px;
+    color: greenyellow;
+  }
+  .main {
+    font-size: 14px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .p3logo{
+    height:32px;
+  }
 }
