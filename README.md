@@ -1,2 +1,2 @@
-# game63
+# SC312-201 
 Basic of Game Programming 2563
