@@ -38,6 +38,11 @@ canvas {
   font-size: 30px;
   color: greenyellow;
 }
+#gamecanvas{
+  max-width: 1028px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media only screen and (max-width: 780px) {
   .title {
