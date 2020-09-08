@@ -1,0 +1,334 @@
+{
+	"textures": [
+		{
+			"image": "items.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 193,
+				"h": 173
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "diamond_5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 1,
+						"w": 55,
+						"h": 60
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 55,
+						"h": 60
+					}
+				},
+				{
+					"filename": "diamond_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 0,
+						"w": 53,
+						"h": 61
+					},
+					"frame": {
+						"x": 55,
+						"y": 0,
+						"w": 53,
+						"h": 61
+					}
+				},
+				{
+					"filename": "diamond_6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 1,
+						"w": 44,
+						"h": 60
+					},
+					"frame": {
+						"x": 0,
+						"y": 60,
+						"w": 44,
+						"h": 60
+					}
+				},
+				{
+					"filename": "diamond_4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 1,
+						"w": 43,
+						"h": 60
+					},
+					"frame": {
+						"x": 108,
+						"y": 0,
+						"w": 43,
+						"h": 60
+					}
+				},
+				{
+					"filename": "skull_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 0,
+						"w": 41,
+						"h": 62
+					},
+					"frame": {
+						"x": 108,
+						"y": 60,
+						"w": 41,
+						"h": 62
+					}
+				},
+				{
+					"filename": "diamond_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 1,
+						"w": 42,
+						"h": 59
+					},
+					"frame": {
+						"x": 44,
+						"y": 61,
+						"w": 42,
+						"h": 59
+					}
+				},
+				{
+					"filename": "skull_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 1,
+						"w": 41,
+						"h": 54
+					},
+					"frame": {
+						"x": 149,
+						"y": 60,
+						"w": 41,
+						"h": 54
+					}
+				},
+				{
+					"filename": "skull_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 1,
+						"w": 42,
+						"h": 52
+					},
+					"frame": {
+						"x": 151,
+						"y": 0,
+						"w": 42,
+						"h": 52
+					}
+				},
+				{
+					"filename": "diamond_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 1,
+						"w": 30,
+						"h": 59
+					},
+					"frame": {
+						"x": 149,
+						"y": 114,
+						"w": 30,
+						"h": 59
+					}
+				},
+				{
+					"filename": "gems_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 7,
+						"w": 30,
+						"h": 48
+					},
+					"frame": {
+						"x": 0,
+						"y": 120,
+						"w": 30,
+						"h": 48
+					}
+				},
+				{
+					"filename": "gems_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 9,
+						"w": 28,
+						"h": 46
+					},
+					"frame": {
+						"x": 30,
+						"y": 120,
+						"w": 28,
+						"h": 46
+					}
+				},
+				{
+					"filename": "gems_4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 7,
+						"w": 26,
+						"h": 48
+					},
+					"frame": {
+						"x": 58,
+						"y": 120,
+						"w": 26,
+						"h": 48
+					}
+				},
+				{
+					"filename": "gems_5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 9,
+						"w": 24,
+						"h": 46
+					},
+					"frame": {
+						"x": 84,
+						"y": 120,
+						"w": 24,
+						"h": 46
+					}
+				},
+				{
+					"filename": "gems_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 9,
+						"w": 24,
+						"h": 46
+					},
+					"frame": {
+						"x": 108,
+						"y": 122,
+						"w": 24,
+						"h": 46
+					}
+				},
+				{
+					"filename": "gems_6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 9,
+						"w": 20,
+						"h": 46
+					},
+					"frame": {
+						"x": 86,
+						"y": 61,
+						"w": 20,
+						"h": 46
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.6"
+	}
+}
