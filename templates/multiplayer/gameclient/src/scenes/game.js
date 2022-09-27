@@ -39,12 +39,15 @@ export default class GameScene extends Phaser.Scene {
         this.layer_fg = this.map.createStaticLayer("fg", tileset, 0, 0);
         this.players = {};
         this.items = {};
-        this.items_group = this.add.group();
-        this.players_group = this.add.group();
+        //this.items_group = this.add.group();
+        //this.players_group = this.add.group();
         this.cursors = this.input.keyboard.createCursorKeys();
         this.leftKeyPressed = false;
         this.rightKeyPressed = false;
         this.upKeyPressed = false;
+        
+        // var p = this.add.armature("player_zombie", "player");
+        // p.x =400; p.y = 400;
 
         this.create_socket();
         this.input.keyboard.on('keydown-ESC', () => {
@@ -59,14 +62,15 @@ export default class GameScene extends Phaser.Scene {
         this.socket = io();
         // จัดการข้อมูลที่ได้รับจาก server
         this.socket.on('currentPlayers', (players) => {
-            for (const id in players) {
-                if (players[id].playerId === this.socket.id) {
-                    this.me = this.displayPlayers(players[id], 'redhat');
+             //console.log(players,this.socket);
+             for (const id in players) {
+                 if (players[id].playerId === this.socket.id) {
+                    this.me = this.displayPlayers(players[id]);
                     this.cameras.main.startFollow(this.me);
                 } else {
-                    this.displayPlayers(players[id], 'redhat');
+                    this.displayPlayers(players[id]);
                 }
-            }
+             }
         });
 
         this.socket.on('currentItems', (items) => {
@@ -86,7 +90,7 @@ export default class GameScene extends Phaser.Scene {
         });
 
         this.socket.on('newPlayer', (playerInfo) => {
-            this.displayPlayers(playerInfo, 'redhat');
+            this.displayPlayers(playerInfo);
         });
 
         this.socket.on('removeItem', (itemid) => {
@@ -95,9 +99,10 @@ export default class GameScene extends Phaser.Scene {
         }
         );
 
-        this.socket.on('disconnect', (playerId) => {
+        this.socket.on('removeplayer', (playerId) => {
             if (this.players[playerId]) {
                 this.players[playerId].destroy();
+                delete this.players[playerId];
             }
         });
 
@@ -105,7 +110,7 @@ export default class GameScene extends Phaser.Scene {
             for (var id in players) {
                 if (this.players[id]) {
                     this.players[id].x = players[id].x;
-                    this.players[id].y = players[id].y+36;
+                    this.players[id].y = players[id].y+35;
                     //this.players[id].setFlipX(players[id].flipX);       // สำหรับ sprite
                     this.players[id].armature.flipX = players[id].flipX;  // สำหรับ dragonbone
 
@@ -173,17 +178,18 @@ export default class GameScene extends Phaser.Scene {
             jump : this.upKeyPressed });
         }
     }
-    displayPlayers(playerInfo, sprite) {        
-         const player = this.add.armature("player_"+playerInfo.sprite, "dgplayer");
-         window.dg = player;
+    displayPlayers(playerInfo) {        
+        console.log(playerInfo);
+        const player = this.add.armature("player_"+playerInfo.sprite, "player");
+        //  window.dg = player;
          player.animation.play("idle",-1);
          player.playerId = playerInfo.playerId;
          player.depth = 1;
          player.x = playerInfo.x;
-         player.y = playerInfo.y;         
+         player.y = playerInfo.y+35;         
          
-         this.players[player.playerId] = player;
-         this.players_group.add(player);
-         return player;
+        this.players[player.playerId] = player;
+        //this.players_group.add(player);
+        return player;
      }
 }
