@@ -1,4 +1,3 @@
-const installJsDom = require("jsdom-global");
 const express = require('express');
 const app = express();
 const http = require('http');
