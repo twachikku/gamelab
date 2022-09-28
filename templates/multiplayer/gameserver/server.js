@@ -37,7 +37,8 @@ class ServerScene extends Phaser.Scene {
         sprite: charactor_names[charindex],
         status: 1,
         score: 0,
-        hp: 0,
+        hp: 100,
+        mp: 0, maxhp: 100, 
         input: {
           left: false,
           right: false,
@@ -72,21 +73,24 @@ class ServerScene extends Phaser.Scene {
 
        if(this.players[sprite.socketId]){
         var p = this.players[sprite.socketId];
+        var isFloor = sprite.body.blocked.down;
         var input = p.input;
         if(input.left){
           sprite.setVelocityX(-200);
           p.animation = 'walk';
+          p.flipX = true;
         }
         else if(input.right){
           sprite.setVelocityX(200);
           p.animation = 'walk';
+          p.flipX = false;
         }
         else {
           p.animation = 'idle';
           sprite.setVelocityX(0);
         }
 
-        if(input.jump){          
+        if(input.jump && isFloor){          
           sprite.setVelocityY(-500);
         }
         if(Math.abs(sprite.body.velocity.y)>1){
