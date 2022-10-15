@@ -7,5 +7,5 @@
 
 ``` 
 docker build -t multiplayer .
-docker run -p 8081:8081 -d --rm devserver 
+docker run -p 8081:8081 -d --rm multiplayer
 ```
