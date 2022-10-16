@@ -50,12 +50,14 @@ class ServerScene extends Phaser.Scene {
       sprite.socketId = socket.id;
       this.players_group.add(sprite);
       this.players[socket.id] = socket.player;
+      socket.sprite = sprite;
       socket.emit("currentPlayers",this.players);
       socket.broadcast.emit("newPlayer",socket.player);
       socket.on('disconnect', ()=>{
         var player = socket.player;
         console.log('user disconnected ',player.no);
         // remove player from server
+        socket.sprite.destroy();
         delete this.players[socket.id];
         // emit a message to all players to remove this player
         io.emit('removeplayer', socket.id);
