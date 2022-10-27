@@ -2,7 +2,10 @@
 - ใช้คำสั่ง  npm install   เพื่อติดตั้ง
 - ใช้คำสั่ง  npm  start   เพื่อรัน
 - ทดสอบ  http://localhost:8081/    
- 
+
+# Live Demo  ทดลองเล่น
+- http://web.twachi.net:8081/
+
 # การรันบน Docker
 
 ``` 
