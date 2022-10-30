@@ -1,10 +1,15 @@
+# Tutorial VDO
+https://www.youtube.com/watch?v=0pUVVAeWo8c
+
+[![Tutorial VDO](https://img.youtube.com/vi/0pUVVAeWo8c/0.jpg)](https://www.youtube.com/watch?v=0pUVVAeWo8c)
+
 # การรันบน NodeJS
 - ใช้คำสั่ง  npm install   เพื่อติดตั้ง
 - ใช้คำสั่ง  npm  start   เพื่อรัน
 - ทดสอบ  http://localhost:8081/    
 
 # Live Demo  ทดลองเล่น
-- http://web.twachi.net:8081/
+- https://demo-b7m2jx5qoa-uc.a.run.app/
 
 # การรันบน Docker
 
